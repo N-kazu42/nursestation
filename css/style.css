@@ -399,13 +399,466 @@ th {
   font-weight: bold;
 }
 
-h1 {
-  font-size: large;
+#question {
+  background: #faebee;
+  color: #868686;
+}
+
+#question .inner {
+  padding-bottom: 8rem;
+}
+
+#question .fs2 {
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 1080px) {
+  #question .fs2 {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #question .fs2 {
+    font-size: 0.8rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
-  h1 {
-    display: none;
+  #question .fs2 {
+    font-size: 1.2rem;
   }
+}
+
+#question .fs5 {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  #question .fs5 {
+    font-size: 0.8rem;
+  }
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.question-title {
+  font-size: 40px;
+  padding: 5rem 0 3rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .question-title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .question-title {
+    font-size: 20px;
+  }
+}
+
+.question-title-inner {
+  display: inline-block;
+  position: relative;
+}
+
+.question-title h2 {
+  margin: 0 auto;
+}
+
+.question-title img {
+  width: 10%;
+}
+
+.question-title .left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(-100%, -50%);
+          transform: translate(-100%, -50%);
+}
+
+.question-title .right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translate(100%, -50%);
+          transform: translate(100%, -50%);
+}
+
+.question-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 480px) {
+  .question-group {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.question-group .question-wrap:nth-of-type(2) {
+  margin: 0 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .question-group .question-wrap:nth-of-type(2) {
+    margin: 0 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .question-group .question-wrap:nth-of-type(2) {
+    margin: 0;
+  }
+}
+
+.question-wrap {
+  width: 33%;
+}
+
+@media screen and (max-width: 480px) {
+  .question-wrap {
+    width: 70%;
+    padding-bottom: 3rem;
+  }
+}
+
+.question-wrap img {
+  width: 100%;
+}
+
+.question-wrap .title {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.question-wrap .question-lead {
+  width: 100%;
+}
+
+.question-wrap .question-lead p {
+  background: url(../image/hukidashi.png) no-repeat;
+  background-size: 100%;
+  background-position: center;
+  padding: 2rem 2rem 3rem 2rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .question-wrap .question-lead p {
+    background-size: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .question-wrap .question-lead p {
+    padding: 1.5rem 2rem 2rem 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .question-wrap .question-lead p {
+    padding: 1.5rem 2rem 2rem 2rem;
+  }
+}
+
+#contact {
+  background: #faebee;
+  color: #868686;
+}
+
+@media screen and (max-width: 480px) {
+  #contact {
+    padding: 3rem 0;
+  }
+}
+
+#contact .line-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 480px) {
+  #contact .line-contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+#contact .line-contact .image-area,
+#contact .line-contact .text-area {
+  width: 50%;
+  padding: 0 2rem;
+}
+
+@media screen and (max-width: 480px) {
+  #contact .line-contact .image-area,
+  #contact .line-contact .text-area {
+    width: 100%;
+  }
+}
+
+#contact .line-contact .image-area img {
+  width: 100%;
+}
+
+#contact .text-area {
+  font-size: 40px;
+}
+
+#contact .text-area button img {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  #contact .text-area {
+    font-size: 30px;
+  }
+}
+
+#contact .text-area-inner {
+  display: inline-block;
+  position: relative;
+}
+
+#contact .text-area img {
+  width: 10%;
+}
+
+#contact .text-area .left {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+}
+
+@media screen and (max-width: 480px) {
+  #contact .text-area .left {
+    display: block;
+  }
+}
+
+#contact .text-area .right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+
+@media screen and (max-width: 480px) {
+  #contact .text-area .right {
+    -webkit-transform: translate(0%, 50%);
+            transform: translate(0%, 50%);
+  }
+}
+
+#contact .text-area p {
+  padding-left: 4rem;
+}
+
+@media screen and (max-width: 480px) {
+  #contact .text-area p {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #contact .text-area button {
+    margin-right: 3rem;
+  }
+}
+
+#voice {
+  background: url(../image/body_pattern.png);
+  color: #868686;
+  padding-top: 8rem;
+  position: relative;
+}
+
+#voice .bg-right {
+  position: absolute;
+  z-index: 0;
+  top: 10;
+  right: 0;
+  width: 10%;
+}
+
+@media screen and (max-width: 480px) {
+  #voice .bg-right {
+    width: 30%;
+  }
+}
+
+#voice .bg-left {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  left: 0;
+  width: 5%;
+}
+
+@media screen and (max-width: 480px) {
+  #voice .bg-left {
+    width: 20%;
+  }
+}
+
+#voice .inner {
+  position: relative;
+  padding-bottom: 8rem;
+  z-index: 5;
+}
+
+#voice .fs5 {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  #voice .fs5 {
+    font-size: 0.8rem;
+  }
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.voice-title {
+  font-size: 40px;
+  padding: 5rem 0 3rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .voice-title {
+    font-size: 30px;
+  }
+}
+
+.voice-title-inner {
+  display: inline-block;
+  position: relative;
+}
+
+.voice-title h2 {
+  margin: 0 auto;
+}
+
+.voice-title img {
+  width: 10%;
+}
+
+.voice-title .left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(-100%, -50%);
+          transform: translate(-100%, -50%);
+}
+
+.voice-title .right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translate(100%, -50%);
+          transform: translate(100%, -50%);
+}
+
+.voice-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 480px) {
+  .voice-group {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.voice-group .voice-wrap:nth-of-type(2) {
+  margin: 0 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .voice-group .voice-wrap:nth-of-type(2) {
+    margin: 0 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .voice-group .voice-wrap:nth-of-type(2) {
+    margin: 0;
+  }
+}
+
+.voice-wrap {
+  width: 33%;
+}
+
+@media screen and (max-width: 480px) {
+  .voice-wrap {
+    width: 70%;
+    padding-bottom: 3rem;
+  }
+}
+
+.voice-wrap img {
+  width: 100%;
+}
+
+.voice-wrap .voice-text {
+  padding-top: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
