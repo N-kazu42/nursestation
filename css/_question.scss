@@ -1,0 +1,9 @@
+@import "_common.scss";
+
+
+h1{
+    @include mq(sp){
+        display: none;
+    }
+    font-size: large;
+}

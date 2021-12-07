@@ -1,0 +1,13 @@
+//ブレイクポイントの種類を定義
+
+$breakpoint: (
+  sp: 'screen and (max-width: 480px)',
+  tab: 'screen and (man-width: 768px)',
+  pc: 'screen and (man-width: 1080px)'
+);
+
+@mixin mq($bp) {
+  @media #{map-get($breakpoint, $bp)} {
+   @content;
+  }
+}

@@ -398,4 +398,14 @@ th {
   text-align: left;
   font-weight: bold;
 }
+
+h1 {
+  font-size: large;
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */
