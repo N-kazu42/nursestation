@@ -1,0 +1,80 @@
+@import "_common.scss";
+// contactエリアーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+
+#contact {
+    background: #faebee;
+    color: #868686;
+    @include mq(sp) {
+      padding: 3rem 0;
+    }
+    .line-contact {
+      display: flex;
+      @include mq(sp) {
+        flex-direction: column;
+        justify-content: center;
+      }
+      .image-area,
+      .text-area {
+        width: 50%;
+        @include mq(sp) {
+          width: 100%;
+        }
+        padding: 0 2rem;
+      }
+      .image-area {
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .text-area {
+      font-size: 40px;
+      button {
+        img {
+          width: 100%;
+        }
+      }
+      @include mq(tab) {
+        font-size: 30px;
+      }
+      &-inner {
+        display: inline-block;
+        position: relative;
+      }
+      img {
+        width: 10%;
+      }
+      .left {
+        display: none;
+        @include mq(sp) {
+          display: block;
+        }
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(50%, 50%);
+      }
+      .right {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(50%, -50%);
+        @include mq(sp) {
+          transform: translate(0%, 50%);
+        }
+      }
+      p {
+        padding-left: 4rem;
+        @include mq(sp) {
+          padding-top: 2rem;
+          padding-left: 2rem;
+          margin-left: 2rem;
+        }
+      }
+      button {
+        @include mq(sp) {
+          margin-right: 3rem;
+        }
+      }
+    }
+  }

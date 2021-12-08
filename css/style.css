@@ -445,6 +445,12 @@ th {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1080px) {
+  .inner {
+    padding: 0 2rem;
+  }
+}
+
 .question-title {
   font-size: 40px;
   padding: 5rem 0 3rem 0;
@@ -553,6 +559,7 @@ th {
 .question-wrap .title {
   text-align: center;
   padding-bottom: 1rem;
+  line-height: 1.5;
 }
 
 .question-wrap .question-lead {
@@ -584,6 +591,10 @@ th {
   .question-wrap .question-lead p {
     padding: 1.5rem 2rem 2rem 2rem;
   }
+}
+
+.question-wrap .question-text {
+  line-height: 1.5;
 }
 
 #contact {
@@ -744,6 +755,12 @@ th {
   z-index: 5;
 }
 
+@media screen and (max-width: 1080px) {
+  #voice .inner {
+    padding: 0 2rem;
+  }
+}
+
 #voice .fs5 {
   font-size: 1rem;
 }
@@ -754,12 +771,12 @@ th {
   }
 }
 
-.inner {
+#voice .inner {
   max-width: 1100px;
   margin: 0 auto;
 }
 
-.voice-title {
+#voice .voice-title {
   font-size: 40px;
   padding: 5rem 0 3rem 0;
   display: -webkit-box;
@@ -774,25 +791,25 @@ th {
 }
 
 @media screen and (max-width: 768px) {
-  .voice-title {
+  #voice .voice-title {
     font-size: 30px;
   }
 }
 
-.voice-title-inner {
+#voice .voice-title-inner {
   display: inline-block;
   position: relative;
 }
 
-.voice-title h2 {
+#voice .voice-title h2 {
   margin: 0 auto;
 }
 
-.voice-title img {
+#voice .voice-title img {
   width: 10%;
 }
 
-.voice-title .left {
+#voice .voice-title .left {
   position: absolute;
   top: 0;
   left: 0;
@@ -800,7 +817,7 @@ th {
           transform: translate(-100%, -50%);
 }
 
-.voice-title .right {
+#voice .voice-title .right {
   position: absolute;
   top: 0;
   right: 0;
@@ -808,14 +825,14 @@ th {
           transform: translate(100%, -50%);
 }
 
-.voice-group {
+#voice .voice-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 @media screen and (max-width: 480px) {
-  .voice-group {
+  #voice .voice-group {
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -827,38 +844,165 @@ th {
   }
 }
 
-.voice-group .voice-wrap:nth-of-type(2) {
+#voice .voice-group .voice-wrap:nth-of-type(2) {
   margin: 0 100px;
 }
 
 @media screen and (max-width: 768px) {
-  .voice-group .voice-wrap:nth-of-type(2) {
+  #voice .voice-group .voice-wrap:nth-of-type(2) {
     margin: 0 50px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .voice-group .voice-wrap:nth-of-type(2) {
+  #voice .voice-group .voice-wrap:nth-of-type(2) {
     margin: 0;
   }
 }
 
-.voice-wrap {
+#voice .voice-wrap {
   width: 33%;
 }
 
 @media screen and (max-width: 480px) {
-  .voice-wrap {
+  #voice .voice-wrap {
     width: 70%;
     padding-bottom: 3rem;
   }
 }
 
-.voice-wrap img {
+#voice .voice-wrap img {
   width: 100%;
 }
 
-.voice-wrap .voice-text {
+#voice .voice-wrap .voice-text {
   padding-top: 1rem;
+  line-height: 1.5;
+}
+
+#voice .border {
+  border-bottom: 1px solid #e59faf;
+  opacity: 1;
+  margin: 8rem 2rem;
+}
+
+#info {
+  background: url(../image/body_pattern.png);
+  color: #868686;
+  position: relative;
+  padding-bottom: 10rem;
+}
+
+#info .inner {
+  position: relative;
+  z-index: 2;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1080px) {
+  #info .inner {
+    padding: 0 2rem;
+  }
+}
+
+#info .bg-right {
+  position: absolute;
+  z-index: 0;
+  top: 10%;
+  right: 0;
+  width: 5%;
+}
+
+@media screen and (max-width: 480px) {
+  #info .bg-right {
+    width: 15%;
+  }
+}
+
+#info .bg-right-bottom {
+  position: absolute;
+  z-index: 0;
+  bottom: 5%;
+  right: 0;
+  width: 7%;
+}
+
+@media screen and (max-width: 480px) {
+  #info .bg-right-bottom {
+    width: 15%;
+  }
+}
+
+#info .bg-left {
+  position: absolute;
+  z-index: 0;
+  bottom: 30%;
+  left: 0;
+  width: 5%;
+}
+
+@media screen and (max-width: 480px) {
+  #info .bg-left {
+    width: 20%;
+  }
+}
+
+#info .fs2 {
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 1080px) {
+  #info .fs2 {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #info .fs2 {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #info .fs2 {
+    font-size: 1.2rem;
+  }
+}
+
+#info .fs5 {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  #info .fs5 {
+    font-size: 0.8rem;
+  }
+}
+
+#info .info-title {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+#info .info-text {
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  #info .info-text {
+    margin: 0 2rem;
+  }
+}
+
+footer {
+  background-color: #E59FAF;
+}
+
+footer p {
+  font-size: 1rem;
+  text-align: center;
+  padding: 2rem 0;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

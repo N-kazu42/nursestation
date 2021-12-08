@@ -1,0 +1,81 @@
+@import "_common.scss";
+
+// infoエリアーーーー
+
+#info {
+    background: url(../image/body_pattern.png);
+    color: #868686;
+    position: relative;
+    padding-bottom: 10rem;
+  .inner {
+    position: relative;
+    z-index: 2;
+    max-width: 1100px;
+    margin: 0 auto;
+    @include mq(pc) {
+        padding: 0 2rem;
+      }
+    
+  }
+  .bg-right {
+    position: absolute;
+    z-index: 0;
+    top: 10%;
+    right: 0;
+    width: 5%;
+    @include mq(sp) {
+      width: 15%;
+    }
+    &-bottom{
+    position: absolute;
+    z-index: 0;
+    bottom: 5%;
+    right: 0;
+    width: 7%;
+    @include mq(sp) {
+      width: 15%;
+    }
+    }
+  }
+  .bg-left {
+    position: absolute;
+    z-index: 0;
+    bottom: 30%;
+    left: 0;
+    width: 5%;
+    @include mq(sp) {
+      width: 20%;
+    }
+  }
+  .fs2 {
+    font-size: 1.3rem;
+    @include mq(pc) {
+      font-size: 1.1rem;
+    }
+    @include mq(tab) {
+      font-size: 0.8rem;
+    }
+    @include mq(sp) {
+      font-size: 1.2rem;
+    }
+  }
+  .fs5 {
+    font-size: 1rem;
+    @include mq(tab) {
+      font-size: 0.8rem;
+    }
+  }
+  .info{
+      &-title{
+        text-align: center;
+        padding-bottom: 2rem;
+      }
+      &-text{
+        line-height: 1.5;
+        @include mq(tab) {
+            margin: 0 2rem;
+          }
+      }
+
+  }
+}
