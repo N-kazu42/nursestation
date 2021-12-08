@@ -472,7 +472,7 @@ th {
 
 @media screen and (max-width: 480px) {
   #question .fs2 {
-    font-size: 15px;
+    font-size: 20px;
   }
 }
 
@@ -500,7 +500,7 @@ th {
 
 @media screen and (max-width: 480px) {
   #question .fs3 {
-    font-size: 13px;
+    font-size: 20px;
   }
 }
 
@@ -605,7 +605,13 @@ th {
 
 @media screen and (max-width: 768px) {
   .question-group .question-wrap:nth-of-type(2) {
-    margin: 0 50px;
+    margin: 0 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .question-group .question-wrap:nth-of-type(2) {
+    margin: 0 15px;
   }
 }
 
@@ -621,7 +627,7 @@ th {
 
 @media screen and (max-width: 480px) {
   .question-wrap {
-    width: 70%;
+    width: 100%;
     padding-bottom: 3rem;
   }
 }
@@ -663,7 +669,7 @@ th {
 
 @media screen and (max-width: 480px) {
   .question-wrap .question-lead p {
-    padding: 1.5rem 2rem 2rem 2rem;
+    padding: 2.5rem 2rem 3rem 2rem;
   }
 }
 
@@ -720,7 +726,6 @@ th {
 #contact .line-contact .image-area,
 #contact .line-contact .text-area {
   width: 50%;
-  padding: 0 2rem;
 }
 
 @media screen and (max-width: 480px) {
@@ -802,16 +807,16 @@ th {
 
 @media screen and (max-width: 480px) {
   #contact .text-area p {
-    font-size: 26px;
+    font-size: 28px;
     padding-top: 2rem;
-    padding-left: 1rem;
+    padding-left: 2rem;
     margin-left: 2rem;
   }
 }
 
 @media screen and (max-width: 330px) {
   #contact .text-area p {
-    font-size: 20px;
+    font-size: 28px;
     padding-top: 2rem;
     padding-left: 1rem;
     margin-left: 2rem;
@@ -843,7 +848,7 @@ th {
 
 .dot-bg {
   background: url(../image/body_pattern.png);
-  background-size: 36px;
+  background-size: 25px;
 }
 
 #voice {
@@ -985,6 +990,12 @@ th {
   }
 }
 
+@media screen and (max-width: 700px) {
+  #voice .voice-group .voice-wrap:nth-of-type(2) {
+    margin: 0 15px;
+  }
+}
+
 @media screen and (max-width: 480px) {
   #voice .voice-group .voice-wrap:nth-of-type(2) {
     margin: 0;
@@ -997,7 +1008,7 @@ th {
 
 @media screen and (max-width: 480px) {
   #voice .voice-wrap {
-    width: 70%;
+    width: 100%;
     padding-bottom: 3rem;
   }
 }

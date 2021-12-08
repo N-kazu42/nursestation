@@ -19,7 +19,7 @@
         @include mq(sp) {
           width: 100%;
         }
-        padding: 0 2rem;
+        
       }
       .image-area {
         img {
@@ -72,13 +72,13 @@
           margin-left: 2rem;
         }
         @include mq(sp) {
-            font-size: 26px;
+            font-size: 28px;
           padding-top: 2rem;
-          padding-left: 1rem;
+          padding-left: 2rem;
           margin-left: 2rem;
         }
         @include mq(ssp) {
-            font-size: 20px;
+            font-size: 28px;
           padding-top: 2rem;
           padding-left: 1rem;
           margin-left: 2rem;
