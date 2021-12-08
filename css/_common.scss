@@ -1,27 +1,31 @@
 //ブレイクポイントの種類を定義
 
 $breakpoint: (
-  sp: 'screen and (max-width: 480px)',
-  tab: 'screen and (max-width: 768px)',
-  pc: 'screen and (max-width: 1080px)'
+  ssp: "screen and (max-width: 330px)",
+  sp: "screen and (max-width: 480px)",
+  sp-y: "screen and (max-width: 700px)",
+  tab: "screen and (max-width: 768px)",
+  tab-y: "screen and (max-width: 820px)",
+  pc: "screen and (max-width: 1080px)",
 );
 
 @mixin mq($bp) {
   @media #{map-get($breakpoint, $bp)} {
-   @content;
+    @content;
   }
 }
 
-.kmft{
-  font-family: 'Kiwi Maru', serif;
+
+.kmft {
+  font-family: "Kiwi Maru", serif;
 }
-.nsft{
-  font-family: 'Noto Sans JP', sans-serif;
+.nsft {
+  font-family: "Noto Sans JP", sans-serif;
   font-weight: lighter;
 }
-.ftw5{
+.ftw5 {
   font-weight: 500;
 }
-.ftw3{
+.ftw3 {
   font-weight: 300;
 }

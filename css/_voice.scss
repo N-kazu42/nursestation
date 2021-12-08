@@ -32,14 +32,14 @@
       padding-bottom: 8rem;
       z-index: 5;
       @include mq(pc) {
-        padding: 0 2rem;
+        padding: 0 16px;
       }
     }
   
     .fs5 {
-      font-size: 1rem;
+      font-size: 18px;
       @include mq(tab) {
-        font-size: 0.8rem;
+        font-size: 16px;
       }
     }
     .inner {

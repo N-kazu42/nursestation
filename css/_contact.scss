@@ -65,15 +65,28 @@
       }
       p {
         padding-left: 4rem;
-        @include mq(sp) {
+        @include mq(sp-y) {
+            font-size: 22px;
           padding-top: 2rem;
-          padding-left: 2rem;
+          padding-left: 1rem;
+          margin-left: 2rem;
+        }
+        @include mq(sp) {
+            font-size: 26px;
+          padding-top: 2rem;
+          padding-left: 1rem;
+          margin-left: 2rem;
+        }
+        @include mq(ssp) {
+            font-size: 20px;
+          padding-top: 2rem;
+          padding-left: 1rem;
           margin-left: 2rem;
         }
       }
       button {
         @include mq(sp) {
-          margin-right: 3rem;
+          margin-right: 2rem;
         }
       }
     }

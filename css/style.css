@@ -400,11 +400,11 @@ th {
 }
 
 .kmft {
-  font-family: 'Kiwi Maru', serif;
+  font-family: "Kiwi Maru", serif;
 }
 
 .nsft {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-weight: lighter;
 }
 
@@ -417,11 +417,11 @@ th {
 }
 
 .kmft {
-  font-family: 'Kiwi Maru', serif;
+  font-family: "Kiwi Maru", serif;
 }
 
 .nsft {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-weight: lighter;
 }
 
@@ -443,34 +443,74 @@ th {
 }
 
 #question .fs2 {
-  font-size: 1.3rem;
+  font-size: 22px;
 }
 
 @media screen and (max-width: 1080px) {
   #question .fs2 {
-    font-size: 1.1rem;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  #question .fs2 {
+    font-size: 14px;
   }
 }
 
 @media screen and (max-width: 768px) {
   #question .fs2 {
-    font-size: 0.8rem;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #question .fs2 {
+    font-size: 10px;
   }
 }
 
 @media screen and (max-width: 480px) {
   #question .fs2 {
-    font-size: 1.2rem;
+    font-size: 15px;
+  }
+}
+
+#question .fs3 {
+  font-size: 22px;
+}
+
+@media screen and (max-width: 1080px) {
+  #question .fs3 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #question .fs3 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #question .fs3 {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #question .fs3 {
+    font-size: 13px;
   }
 }
 
 #question .fs5 {
-  font-size: 1rem;
+  font-size: 18px;
 }
 
 @media screen and (max-width: 768px) {
   #question .fs5 {
-    font-size: 0.8rem;
+    font-size: 16px;
   }
 }
 
@@ -481,7 +521,7 @@ th {
 
 @media screen and (max-width: 1080px) {
   .inner {
-    padding: 0 2rem;
+    padding: 0 16px;
   }
 }
 
@@ -507,7 +547,7 @@ th {
 
 @media screen and (max-width: 480px) {
   .question-title {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 
@@ -632,11 +672,11 @@ th {
 }
 
 .kmft {
-  font-family: 'Kiwi Maru', serif;
+  font-family: "Kiwi Maru", serif;
 }
 
 .nsft {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-weight: lighter;
 }
 
@@ -751,26 +791,45 @@ th {
   padding-left: 4rem;
 }
 
+@media screen and (max-width: 700px) {
+  #contact .text-area p {
+    font-size: 22px;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    margin-left: 2rem;
+  }
+}
+
 @media screen and (max-width: 480px) {
   #contact .text-area p {
+    font-size: 26px;
     padding-top: 2rem;
-    padding-left: 2rem;
+    padding-left: 1rem;
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  #contact .text-area p {
+    font-size: 20px;
+    padding-top: 2rem;
+    padding-left: 1rem;
     margin-left: 2rem;
   }
 }
 
 @media screen and (max-width: 480px) {
   #contact .text-area button {
-    margin-right: 3rem;
+    margin-right: 2rem;
   }
 }
 
 .kmft {
-  font-family: 'Kiwi Maru', serif;
+  font-family: "Kiwi Maru", serif;
 }
 
 .nsft {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-weight: lighter;
 }
 
@@ -825,17 +884,17 @@ th {
 
 @media screen and (max-width: 1080px) {
   #voice .inner {
-    padding: 0 2rem;
+    padding: 0 16px;
   }
 }
 
 #voice .fs5 {
-  font-size: 1rem;
+  font-size: 18px;
 }
 
 @media screen and (max-width: 768px) {
   #voice .fs5 {
-    font-size: 0.8rem;
+    font-size: 16px;
   }
 }
 
@@ -955,11 +1014,11 @@ th {
 }
 
 .kmft {
-  font-family: 'Kiwi Maru', serif;
+  font-family: "Kiwi Maru", serif;
 }
 
 .nsft {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-weight: lighter;
 }
 
@@ -987,7 +1046,7 @@ th {
 
 @media screen and (max-width: 1080px) {
   #info .inner {
-    padding: 0 2rem;
+    padding: 0 16px;
   }
 }
 
@@ -1034,34 +1093,34 @@ th {
 }
 
 #info .fs2 {
-  font-size: 1.3rem;
+  font-size: 24px;
 }
 
 @media screen and (max-width: 1080px) {
   #info .fs2 {
-    font-size: 1.1rem;
+    font-size: 20px;
   }
 }
 
 @media screen and (max-width: 768px) {
   #info .fs2 {
-    font-size: 0.8rem;
+    font-size: 16px;
   }
 }
 
 @media screen and (max-width: 480px) {
   #info .fs2 {
-    font-size: 1.2rem;
+    font-size: 20px;
   }
 }
 
 #info .fs5 {
-  font-size: 1rem;
+  font-size: 18px;
 }
 
 @media screen and (max-width: 768px) {
   #info .fs5 {
-    font-size: 0.8rem;
+    font-size: 16px;
   }
 }
 
@@ -1074,18 +1133,12 @@ th {
   line-height: 1.5;
 }
 
-@media screen and (max-width: 768px) {
-  #info .info-text {
-    margin: 0 2rem;
-  }
-}
-
 .kmft {
-  font-family: 'Kiwi Maru', serif;
+  font-family: "Kiwi Maru", serif;
 }
 
 .nsft {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-weight: lighter;
 }
 
@@ -1102,7 +1155,7 @@ footer {
 }
 
 footer p {
-  font-size: 1rem;
+  font-size: 12px;
   text-align: center;
   padding: 2rem 0;
   color: #fff;

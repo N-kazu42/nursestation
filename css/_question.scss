@@ -8,21 +8,42 @@
     padding-bottom: 8rem;
   }
   .fs2 {
-    font-size: 1.3rem;
+    font-size: 22px;
     @include mq(pc) {
-      font-size: 1.1rem;
+      font-size: 18px;
+    }
+    @include mq(tab-y) {
+      font-size: 14px;
     }
     @include mq(tab) {
-      font-size: 0.8rem;
+      font-size: 16px;
+    }
+    @include mq(sp-y) {
+      font-size: 10px;
     }
     @include mq(sp) {
-      font-size: 1.2rem;
+      font-size: 15px;
+    }
+  }
+  .fs3 {
+    font-size: 22px;
+    @include mq(pc) {
+      font-size: 18px;
+    }
+    @include mq(tab) {
+      font-size: 14px;
+    }
+    @include mq(sp-y) {
+      font-size: 10px;
+    }
+    @include mq(sp) {
+      font-size: 13px;
     }
   }
   .fs5 {
-    font-size: 1rem;
+    font-size: 18px;
     @include mq(tab) {
-      font-size: 0.8rem;
+      font-size: 16px;
     }
   }
 }
@@ -30,7 +51,7 @@
   max-width: 1100px;
   margin: 0 auto;
   @include mq(pc) {
-    padding: 0 2rem;
+    padding: 0 16px;
   }
 }
 .question-title {
@@ -39,7 +60,7 @@
     font-size: 30px;
   }
   @include mq(sp) {
-    font-size: 20px;
+    font-size: 24px;
   }
   padding: 5rem 0 3rem 0;
   display: flex;
