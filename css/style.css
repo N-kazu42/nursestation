@@ -404,7 +404,7 @@ th {
 }
 
 .nsft {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Serif JP', serif;
   font-weight: lighter;
 }
 
@@ -421,7 +421,7 @@ th {
 }
 
 .nsft {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Serif JP', serif;
   font-weight: lighter;
 }
 
@@ -676,7 +676,7 @@ th {
 }
 
 .nsft {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Serif JP', serif;
   font-weight: lighter;
 }
 
@@ -829,7 +829,7 @@ th {
 }
 
 .nsft {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Serif JP', serif;
   font-weight: lighter;
 }
 
@@ -841,8 +841,12 @@ th {
   font-weight: 300;
 }
 
-#voice {
+.dot-bg {
   background: url(../image/body_pattern.png);
+  background-size: 2%;
+}
+
+#voice {
   color: #868686;
   padding-top: 8rem;
   position: relative;
@@ -1018,7 +1022,7 @@ th {
 }
 
 .nsft {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Serif JP', serif;
   font-weight: lighter;
 }
 
@@ -1031,7 +1035,6 @@ th {
 }
 
 #info {
-  background: url(../image/body_pattern.png);
   color: #868686;
   position: relative;
   padding-bottom: 10rem;
@@ -1138,7 +1141,7 @@ th {
 }
 
 .nsft {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Serif JP', serif;
   font-weight: lighter;
 }
 

@@ -1,9 +1,11 @@
 @import "_common.scss";
 
 // voiceエリアーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
-
+.dot-bg{
+  background: url(../image/body_pattern.png);
+  background-size: 2%;
+}
 #voice {
-    background: url(../image/body_pattern.png);
     color: #868686;
     padding-top: 8rem;
     position: relative;
