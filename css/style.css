@@ -399,6 +399,22 @@ th {
   font-weight: bold;
 }
 
+.kmft {
+  font-family: 'Kiwi Maru', serif;
+}
+
+.nsft {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.kmft {
+  font-family: 'Kiwi Maru', serif;
+}
+
+.nsft {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
 #question {
   background: #faebee;
   color: #868686;
@@ -597,6 +613,14 @@ th {
   line-height: 1.5;
 }
 
+.kmft {
+  font-family: 'Kiwi Maru', serif;
+}
+
+.nsft {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
 #contact {
   background: #faebee;
   color: #868686;
@@ -712,6 +736,14 @@ th {
   #contact .text-area button {
     margin-right: 3rem;
   }
+}
+
+.kmft {
+  font-family: 'Kiwi Maru', serif;
+}
+
+.nsft {
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 #voice {
@@ -886,6 +918,14 @@ th {
   margin: 8rem 2rem;
 }
 
+.kmft {
+  font-family: 'Kiwi Maru', serif;
+}
+
+.nsft {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
 #info {
   background: url(../image/body_pattern.png);
   color: #868686;
@@ -993,6 +1033,14 @@ th {
   #info .info-text {
     margin: 0 2rem;
   }
+}
+
+.kmft {
+  font-family: 'Kiwi Maru', serif;
+}
+
+.nsft {
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 footer {
