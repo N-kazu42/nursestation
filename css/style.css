@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! destyle.css v3.0.0 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
@@ -1485,6 +1486,9 @@ img {
 
 footer {
   background-color: #E59FAF;
+  position: relative;
+  /*このクラスが付与されると表示する*/
+  /*このクラスが付与されると表示する*/
 }
 
 footer p {
@@ -1492,5 +1496,37 @@ footer p {
   text-align: center;
   padding: 2rem 0;
   color: #fff;
+}
+
+footer .top-button {
+  width: 100px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  padding: 10px;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+  /*デフォルトで非表示にする*/
+  opacity: 0;
+  visibility: hidden;
+}
+
+@media screen and (max-width: 480px) {
+  footer .top-button {
+    width: 80px;
+  }
+}
+
+footer .active {
+  opacity: 1;
+  visibility: visible;
+}
+
+footer .absolute {
+  position: absolute;
+  top: -170px;
+  bottom: auto;
 }
 /*# sourceMappingURL=style.css.map */
