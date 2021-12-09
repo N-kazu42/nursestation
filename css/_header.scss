@@ -1,210 +1,209 @@
 @import "_common.scss";
 
 .header {
-    @include position;
-    position: fixed;
-    z-index: 100;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.8);
-  
-    .inner {
-      height: 80px;
-      @include flex;
-    }
+  @include position;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+
+  .inner {
+    height: 80px;
+    @include flex;
   }
-  
-  .nav_logo_text {
-    width: 383px;
-  }
-  
-  .nav_line_button {
-    width: 168px;
-  }
-  
-  //mainvisual
+}
+
+.nav_logo_text {
+  width: 383px;
+}
+
+.nav_line_button {
+  width: 168px;
+}
+
+//mainvisual
+.mainvisual {
+  position: relative;
+  @include flex(center, center);
+  height: 850px;
+  max-width: 1700px;
+  margin: 80px auto 0 auto;
+  background: url(../image/body_pattern.png);
+  background-size: 25px;
+}
+
+.header_logo {
+  width: 392px;
+}
+
+.bg_obj_header_1 {
+  @include position(-9%, auto, auto, 10%);
+  width: 500px;
+}
+
+.header_pattern_left {
+  @include position(6%);
+  width: 460px;
+}
+
+.header_pattern_right {
+  @include position(-7%, 0, auto, auto);
+  width: 414px;
+}
+
+.header_copy_left {
+  @include position(25%, auto, auto, 18%);
+  width: 150px;
+}
+
+.line_button {
+  @include position(auto, 2%, 17%, auto);
+  width: 404px;
+}
+
+@media screen and (max-width: 1250px) {
   .mainvisual {
-    position: relative;
-    @include flex(center, center);
-    height: 850px;
-    max-width: 1700px;
-    margin: 80px auto 0 auto;
-    background: url(../image/body_pattern.png);
-    background-size: 25px;
+    height: 750px;
   }
-  
+
   .header_logo {
-    width: 392px;
+    width: 360px;
   }
-  
+
   .bg_obj_header_1 {
-    @include position(-9%, auto, auto, 10%);
-    width: 500px;
+    width: 470px;
   }
-  
+
   .header_pattern_left {
-    @include position(6%);
-    width: 460px;
+    width: 390px;
   }
-  
+
   .header_pattern_right {
-    @include position(-7%, 0, auto, auto);
-    width: 414px;
+    width: 350px;
   }
-  
+
   .header_copy_left {
-    @include position(25%, auto, auto, 18%);
-    width: 150px;
+    width: 110px;
   }
-  
+
   .line_button {
-    @include position(auto, 2%, 17%, auto);
-    width: 404px;
+    width: 350px;
   }
-  
-  @media screen and (max-width: 1250px) {
-    .mainvisual {
-      height: 750px;
-    }
-  
-    .header_logo {
-      width: 360px;
-    }
-  
-    .bg_obj_header_1 {
-      width: 470px;
-    }
-  
-    .header_pattern_left {
-      width: 390px;
-    }
-  
-    .header_pattern_right {
-      width: 350px;
-    }
-  
-    .header_copy_left {
-      width: 110px;
-    }
-  
-    .line_button {
-      width: 350px;
-    }
+}
+
+@media screen and (max-width: 1030px) {
+  .mainvisual {
+    height: 650px;
   }
-  
-  @media screen and (max-width: 1030px) {
-    .mainvisual {
-      height: 650px;
-    }
-  
-    .header_logo {
-      width: 310px;
-    }
-  
-    .bg_obj_header_1 {
-      width: 410px;
-    }
-  
-    .header_pattern_left {
-      width: 330px;
-    }
-  
-    .header_pattern_right {
-      width: 290px;
-    }
-  
-    .header_copy_left {
-      left: 19%;
-      width: 100px;
-    }
-  
-    .line_button {
-      width: 310px;
-    }
+
+  .header_logo {
+    width: 310px;
   }
-  
-  @media screen and (max-width: 900px) {
-    .mainvisual {
-      height: 600px;
-    }
-  
-    .header_logo {
-      width: 280px;
-    }
-  
-    .bg_obj_header_1 {
-      width: 380px;
-    }
-  
-    .header_pattern_left {
-      width: 300px;
-    }
-  
-    .header_pattern_right {
-      width: 260px;
-    }
-  
-    .header_copy_left {
-      left: 19%;
-      width: 90px;
-    }
-  
-    .line_button {
-      bottom: 23%;
-      width: 260px;
+
+  .bg_obj_header_1 {
+    width: 410px;
+  }
+
+  .header_pattern_left {
+    width: 330px;
+  }
+
+  .header_pattern_right {
+    width: 290px;
+  }
+
+  .header_copy_left {
+    left: 19%;
+    width: 100px;
+  }
+
+  .line_button {
+    width: 310px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .mainvisual {
+    height: 600px;
+  }
+
+  .header_logo {
+    width: 280px;
+  }
+
+  .bg_obj_header_1 {
+    width: 380px;
+  }
+
+  .header_pattern_left {
+    width: 300px;
+  }
+
+  .header_pattern_right {
+    width: 260px;
+  }
+
+  .header_copy_left {
+    left: 19%;
+    width: 90px;
+  }
+
+  .line_button {
+    bottom: 23%;
+    width: 260px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    .inner {
+      height: 48px;
+      padding: 0 16px;
     }
   }
-  
-  @media screen and (max-width: 768px) {
-    .header {
-      .inner {
-        height: 48px;
-        padding: 0 16px;
-      }
-    }
-  
-    .nav_logo_text {
-      width: 215px;
-    }
-  
-    .nav_line_button {
-      width: 88px;
-    }
-  
-    .mainvisual {
-      align-items: flex-start;
-      height: 650px;
-      margin-top: 48px;
-    }
-  
-    .header_logo {
-      position: absolute;
-      z-index: 2;
-      width: 263px;
-      padding-top: 22px;
-    }
-  
-    .bg_obj_header_1 {
-      width: 290px;
-    }
-  
-    .header_pattern_left {
-      @include position(auto, auto, 0);
-      width: 264px;
-    }
-  
-    .header_pattern_right {
-      @include position(auto, 0, 140px, auto);
-      width: 54px;
-    }
-  
-    .header_copy_left {
-      @include position(auto, 36px, 135px, auto);
-      width: 84px;
-    }
-  
-    .line_button {
-      bottom: 0;
-      width: 176px;
-    }
+
+  .nav_logo_text {
+    width: 215px;
   }
-  
+
+  .nav_line_button {
+    width: 88px;
+  }
+
+  .mainvisual {
+    align-items: flex-start;
+    height: 650px;
+    margin-top: 48px;
+  }
+
+  .header_logo {
+    position: absolute;
+    z-index: 2;
+    width: 263px;
+    padding-top: 22px;
+  }
+
+  .bg_obj_header_1 {
+    width: 290px;
+  }
+
+  .header_pattern_left {
+    @include position(auto, auto, 0);
+    width: 264px;
+  }
+
+  .header_pattern_right {
+    @include position(auto, 0, 140px, auto);
+    width: 54px;
+  }
+
+  .header_copy_left {
+    @include position(auto, 36px, 135px, auto);
+    width: 84px;
+  }
+
+  .line_button {
+    bottom: 0;
+    width: 176px;
+  }
+}
