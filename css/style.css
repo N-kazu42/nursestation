@@ -1513,12 +1513,6 @@ footer .top-button {
   visibility: hidden;
 }
 
-@media screen and (max-width: 480px) {
-  footer .top-button {
-    width: 45px;
-  }
-}
-
 footer .active {
   opacity: 1;
   visibility: visible;
@@ -1526,7 +1520,7 @@ footer .active {
 
 footer .absolute {
   position: absolute;
-  top: -170px;
+  top: -120px;
   bottom: auto;
 }
 /*# sourceMappingURL=style.css.map */

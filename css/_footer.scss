@@ -13,9 +13,9 @@ footer{
     }
     .top-button{
         width: 55px;
-        @include mq(sp) {
-            width: 45px;
-          }
+        // @include mq(sp) {
+        //     width: 45px;
+        //   }
         position: fixed;
         right: 0;
         bottom: 0;
@@ -40,7 +40,7 @@ footer{
       /*このクラスが付与されると表示する*/
       .absolute{
         position: absolute;
-        top: -170px;
+        top: -120px;
         bottom: auto;
       }
 }
