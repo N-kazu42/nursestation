@@ -1499,7 +1499,7 @@ footer p {
 }
 
 footer .top-button {
-  width: 50px;
+  width: 55px;
   position: fixed;
   right: 0;
   bottom: 0;
@@ -1515,7 +1515,7 @@ footer .top-button {
 
 @media screen and (max-width: 480px) {
   footer .top-button {
-    width: 40px;
+    width: 45px;
   }
 }
 

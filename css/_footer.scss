@@ -12,9 +12,9 @@ footer{
     
     }
     .top-button{
-        width: 50px;
+        width: 55px;
         @include mq(sp) {
-            width: 40px;
+            width: 45px;
           }
         position: fixed;
         right: 0;
