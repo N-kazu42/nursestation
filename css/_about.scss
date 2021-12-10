@@ -409,6 +409,15 @@ h2,p {
 
 }
 
+@media screen and (max-width: 960px) {
+  .about-wrap-message {
+    font-size: 22px;
+  }
+  .consul-person-name {
+    font-size: 26px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .sp-hidden {
       display: none;
