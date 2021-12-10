@@ -1194,6 +1194,12 @@ img {
   }
 }
 
+@media screen and (max-width: 835px) {
+  #question .fs3 {
+    font-size: 16px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   #question .fs3 {
     font-size: 14px;
@@ -1370,6 +1376,12 @@ img {
   }
 }
 
+@media screen and (max-width: 835px) {
+  .question-wrap .question-lead p {
+    padding: 1.5rem 1rem 2rem 1rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .question-wrap .question-lead p {
     padding: 1.5rem 2rem 2rem 2rem;
@@ -1542,6 +1554,16 @@ h2, p {
   /* z-index: -200; */
   position: relative;
   z-index: 2;
+}
+
+#consul .pc-br {
+  display: none;
+}
+
+@media screen and (max-width: 1030px) {
+  #consul .pc-br {
+    display: block;
+  }
 }
 
 .consul-title {
@@ -1773,6 +1795,9 @@ h2, p {
 }
 
 @media screen and (max-width: 1080px) {
+  .sp-hidden {
+    display: none;
+  }
   #about {
     padding-bottom: 4rem;
   }
@@ -1853,14 +1878,11 @@ h2, p {
     font-size: 22px;
   }
   .consul-person-name {
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .sp-hidden {
-    display: none;
-  }
   .pc-hidden {
     display: inline;
   }
@@ -2121,6 +2143,12 @@ img {
   }
 }
 
+@media screen and (max-width: 835px) {
+  #question .fs3 {
+    font-size: 16px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   #question .fs3 {
     font-size: 14px;
@@ -2294,6 +2322,12 @@ img {
 @media screen and (max-width: 768px) {
   .question-wrap .question-lead p {
     background-size: 80%;
+  }
+}
+
+@media screen and (max-width: 835px) {
+  .question-wrap .question-lead p {
+    padding: 1.5rem 1rem 2rem 1rem;
   }
 }
 
