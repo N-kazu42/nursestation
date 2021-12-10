@@ -28,6 +28,14 @@
       }
     }
     .text-area {
+      padding: 3rem 0 0 3rem;
+      @media screen and (max-width: 375px){ 
+        padding: 3rem 0 0 1rem;
+      }
+      @media screen and (max-width: 320px){ 
+        padding: 3rem 0 0 0rem;
+      }
+
       font-size: 40px;
       button {
         img {
@@ -85,6 +93,16 @@
         }
       }
       button {
+        width: 404px;
+        @media screen and (max-width: 1250px){
+          width: 350px;
+        }
+        @media screen and (max-width: 1030px){
+          width: 310px;
+        }
+        @media screen and (max-width: 900px){
+          width: 260px;
+        }
         @include mq(sp) {
           margin-right: 2rem;
         }

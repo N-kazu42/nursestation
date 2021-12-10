@@ -1,0 +1,511 @@
+@charset "utf-8";
+
+@import "reset";
+@import "common";
+@import "question";
+
+
+h2,p {
+    font-family: kiwi Maru;
+    color:#868686;
+}
+.pc-hidden {
+    display: none;
+}
+
+#about {
+    background-image: url(../image/body_pattern.png); 
+    background-size: 25px;
+    position: relative;  
+    padding-bottom: 8rem; 
+    z-index: -200;
+}
+.inner {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.about-title {
+    padding: 5rem 0 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-title-inner {
+    display: inline-block;
+    position: relative;
+    
+    h2 {
+        margin: 0 auto;
+        font-size: 40px;
+        line-height: 58px;
+        text-align: center;
+    }
+    img {
+        width: 10%;
+    }
+    .left {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(-100%, -50%);
+        transform: translate(-100%, -50%);
+    }
+    .right {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(100%, -50%);
+        transform: translate(100%, -50%);
+        }   
+}
+
+.about-desc {
+    margin: 0 auto 50px auto;
+
+    p {
+        text-align: center;
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+
+.about-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.about-wrap-image {
+    width: 400px;
+    height: auto;
+    margin-right: 50px;
+
+    img {
+    width: 100%;
+    border-radius: 10px;
+    }
+}
+.about-wrap-textarea {
+    width: 45%;
+}
+.about-wrap-message {
+    font-size: 32px;
+    line-height: 46px;
+    margin-bottom: 15px;
+}
+.about-wrap-detail {
+    font-size: 18px;
+    line-height: 26px;
+}
+.bg_obj_body_1 {
+    width: 130px;
+    height: 650px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -100;
+
+    img {
+        width: 100%;
+    }
+}
+
+.bg_obj_body_2 {
+    width: 150px;
+    height: 310px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -100;
+
+    img {
+        width: 100%;
+    }
+}
+
+#consul {
+    background-image: url(../image/body_pattern.png); 
+    background-size: 25px;
+    z-index: -200;
+    position: relative; 
+    padding-bottom: 8rem;
+}
+.consul-title {
+
+    padding: 5rem 0 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.consul-title-inner {
+    display: inline-block;
+    position: relative;
+    
+    h2 {
+        margin: 0 auto;
+        font-size: 40px;
+        line-height: 58px;
+        text-align: center;
+    }
+    img {
+        width: 10%;
+    }
+    .left {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(-100%, -50%);
+        transform: translate(-100%, -50%);
+    }
+    .right {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(100%, -50%);
+        transform: translate(100%, -50%);
+        }   
+}
+.consul-person {
+    display: flex;
+    justify-content: center;
+}
+.consul-person-img {
+    width: 30%;
+    margin-right: 50px;
+
+    img {
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+.consul-person-textarea {
+    width: 45%;
+}
+.consul-person-name {
+    font-size: 32px;
+    line-height: 46px;
+    margin-bottom: 30px;
+}
+.consul-person-job {
+    font-size: 24px;
+    line-height: 35px;
+    margin-bottom: 30px;
+}
+.consul-person-desc {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.bg_obj_body_3 {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 150px;
+    height: 290px;
+    z-index: -100;
+
+    img {
+        width: 100%;
+    }
+}
+
+.bg_obj_body_4 {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    width: 160px;
+    height: 760px;
+    z-index: -100;
+
+    img {
+        width: 100%;
+    }
+}
+
+.consul-flow {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    li {
+        width: 27%;
+        position: relative;
+
+        &:after {
+            position: absolute;
+            content: url(../image/arrrow.png);
+            transform: scale(0.5);
+            top: 5%;
+            right: -30%;
+        }
+        &:last-child:after {
+            display: none;
+        }
+
+    }
+}
+
+.consul-flow-title01 {
+    margin-bottom: 20px;
+    position: relative;
+
+    p {
+        font-size: 24px;
+        line-height: 35px;
+        text-align: left;
+        margin-left: 85px;
+    }
+
+    &::before {
+        position: absolute;
+        content: url(../image/number_01.png);
+        top: -45px;
+        left: -40px;
+        transform: scale(0.5);
+    }
+
+}
+
+.consul-flow-title02 {
+    margin-bottom: 60px;
+    position: relative;
+
+    p {
+        font-size: 24px;
+        line-height: 35px;
+        text-align: left;
+        margin-left: 85px;
+        
+    }
+    &::before {
+        position: absolute;
+        content: url(../image/number_02.png);
+        top: -45px;
+        left: -40px;
+        transform: scale(0.5);
+    }
+}
+
+.consul-flow-title03 {
+    margin-bottom: 20px;
+    position: relative;
+
+    p {
+        position: relative;
+        font-size: 24px;
+        line-height: 35px;
+        text-align: left;
+        margin-left: 85px;
+    }
+    &::before {
+        position: absolute;
+        content: url(../image/number_03.png);
+        top: -45px;
+        left: -40px;
+        transform: scale(0.5);
+    }
+
+} 
+
+.consul-flow-desc {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.consul-flow-arrow {
+    display: none;
+}
+
+@media screen and (max-width: 1080px) {
+    #about {
+        padding-bottom: 4rem;
+    }
+    .about-wrap {
+        flex-direction: column;
+    }
+    .about-wrap-image {
+        width: 60%;
+        margin: 0 auto;
+    }
+    .about-wrap-textarea {
+        width: 90%;
+        margin: 50px auto 0 auto;
+        text-align: left;
+    }
+    .about-wrap-message {
+        display: block;
+        text-align: left;
+    }
+    .about-wrap-detail {
+        margin-top: 25px;
+    }
+    .consul-flow {
+        flex-direction: column;
+        margin: 0 auto;
+        width: 90%;
+    }
+    .consul-flow li {
+        width: 100%;
+        
+        &::after {
+            display: none;
+        }
+    }
+    .consul-flow-arrow {
+        display: block;
+        width: 4%;
+        height: auto;
+        margin: 20px auto;
+    
+        img {
+            width: 100%;
+        }
+    
+    }    
+
+}
+ 
+@media screen and (max-width: 768px) {
+    .sp-hidden {
+        display: none;
+    }
+    .pc-hidden {
+        display: inline;
+    }
+    
+    .about-title-inner .left {
+        left: 15%;
+    }
+    .about-title-inner .right {
+        right: 15%;
+    }
+    .about-wrap-image {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .about-wrap-textarea {
+        width: 90%;
+        margin: 25px auto 0 auto;
+    }
+    .about-wrap-message {
+        font-size: 26px;
+        line-height: 30px;
+        margin-bottom: 15px;
+    }
+    .bg_obj_body_1,.bg_obj_body_2 {
+        display: none;
+    }
+    
+    .consul-title-inner .left {
+        left: 5%;
+    }
+    .consul-title-inner .right {
+        right: 5%;
+    }
+    .consul-person {
+        flex-direction: column;
+    }
+    .consul-person-img {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .consul-person-textarea {
+        width: 90%;
+        margin: 15px auto 0 auto;
+    }
+    .consul-person-name {
+        font-size: 24px;
+        line-height: 35px;
+        margin-bottom: 15px;
+    }
+    .consul-person-job {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 15px;
+    }
+
+    .bg_obj_body_3 {
+        top: 30%;
+        width: 85px;
+        height: 225px;   
+    }
+    .bg_obj_body_4 {
+        top: 65%;
+        width: 75px;
+        height: 455px;
+    }
+
+}
+@media screen and (max-width: 550px) {
+
+    .about-title-inner h2 {
+        font-size: 32px;
+        line-height: 46px;
+    }
+
+    .about-wrap-message {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .consul-title-inner h2 {
+        font-size: 32px;
+        line-height: 46px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-title-inner h2 {
+        font-size: 24px;
+        line-height: 35px;
+        text-align: center;
+    }
+    .about-wrap-message {
+        font-size: 20px;
+        line-height: 29px;
+    }
+    .consul-title-inner h2 {
+        font-size: 24px;
+        line-height: 35px;
+        text-align: center;
+    }
+    .consul-flow-arrow {
+        width: 7%;
+    } 
+    .consul-title-inner .left {
+        left: 5%;
+    }
+    .consul-title-inner .right {
+        right: 5%;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .about-wrap-textarea {
+        width: 95%;
+    }
+    .about-wrap-message {
+        margin: 0;
+    }
+    .consul-person-name {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 10px;
+    }
+
+    .consul-flow-title01 {
+        margin-bottom: 30px;
+        p {
+            font-size: 20px;
+            line-height: 25px;
+        }
+    }
+
+    .consul-flow-title03 {
+        margin-bottom: 30px;
+        p {
+            font-size: 20px;
+            line-height: 25px;
+        }
+    }
+
+}
