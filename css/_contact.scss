@@ -2,110 +2,112 @@
 // contactエリアーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 
 #contact {
-    background: #faebee;
-    color: #868686;
+  background: #faebee;
+  color: #868686;
+  @include mq(sp) {
+    padding: 3rem 0;
+  }
+  .line-contact {
+    display: flex;
     @include mq(sp) {
-      padding: 3rem 0;
+      flex-direction: column;
+      justify-content: center;
     }
-    .line-contact {
-      display: flex;
-      @include mq(sp) {
-        flex-direction: column;
-        justify-content: center;
-      }
-      .image-area,
-      .text-area {
-        width: 50%;
-        @include mq(sp) {
-          width: 100%;
-        }
-        
-      }
-      .image-area {
-        img {
-          width: 100%;
-        }
-      }
-    }
+    .image-area,
     .text-area {
-      padding: 3rem 0 0 3rem;
-      @media screen and (max-width: 375px){ 
-        padding: 3rem 0 0 1rem;
+      width: 50%;
+      @include mq(sp) {
+        width: 100%;
       }
-      @media screen and (max-width: 320px){ 
-        padding: 3rem 0 0 0rem;
-      }
-
-      font-size: 40px;
-      button {
-        img {
-          width: 100%;
-        }
-      }
-      @include mq(tab) {
-        font-size: 30px;
-      }
-      &-inner {
-        display: inline-block;
-        position: relative;
-      }
+    }
+    .image-area {
       img {
-        width: 10%;
-      }
-      .left {
-        display: none;
-        @include mq(sp) {
-          display: block;
-        }
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: translate(50%, 50%);
-      }
-      .right {
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translate(50%, -50%);
-        @include mq(sp) {
-          transform: translate(0%, 50%);
-        }
-      }
-      p {
-        padding-left: 4rem;
-        @include mq(sp-y) {
-            font-size: 22px;
-          padding-top: 2rem;
-          padding-left: 1rem;
-          margin-left: 2rem;
-        }
-        @include mq(sp) {
-            font-size: 28px;
-          padding-top: 2rem;
-          padding-left: 2rem;
-          margin-left: 2rem;
-        }
-        @include mq(ssp) {
-            font-size: 28px;
-          padding-top: 2rem;
-          padding-left: 1rem;
-          margin-left: 2rem;
-        }
-      }
-      button {
-        width: 404px;
-        @media screen and (max-width: 1250px){
-          width: 350px;
-        }
-        @media screen and (max-width: 1030px){
-          width: 310px;
-        }
-        @media screen and (max-width: 900px){
-          width: 260px;
-        }
-        @include mq(sp) {
-          margin-right: 2rem;
-        }
+        width: 100%;
       }
     }
   }
+  .text-area {
+    padding: 3rem 0 0 3rem;
+    @media screen and (max-width: 375px) {
+      padding: 3rem 0 0 1rem;
+    }
+    @media screen and (max-width: 320px) {
+      padding: 3rem 0 0 0rem;
+    }
+
+    font-size: 40px;
+    button {
+      img {
+        width: 100%;
+      }
+    }
+    @include mq(tab) {
+      font-size: 30px;
+    }
+    &-inner {
+      display: inline-block;
+      position: relative;
+    }
+    img {
+      width: 32px;
+      @include mq(sp) {
+        width: 24px;
+      }
+    }
+    .left {
+      display: none;
+      @include mq(sp) {
+        display: block;
+      }
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(50%, 50%);
+    }
+    .right {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(50%, -50%);
+      @include mq(sp) {
+        transform: translate(0%, 50%);
+      }
+    }
+    p {
+      padding-left: 4rem;
+      @include mq(sp-y) {
+        font-size: 22px;
+        padding-top: 2rem;
+        padding-left: 1rem;
+        margin-left: 2rem;
+      }
+      @include mq(sp) {
+        font-size: 28px;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        margin-left: 2rem;
+      }
+      @include mq(ssp) {
+        font-size: 28px;
+        padding-top: 2rem;
+        padding-left: 1rem;
+        margin-left: 2rem;
+      }
+    }
+    button {
+      width: 404px;
+      @media screen and (max-width: 1250px) {
+        width: 350px;
+      }
+      @media screen and (max-width: 1030px) {
+        width: 310px;
+      }
+      @media screen and (max-width: 900px) {
+        width: 260px;
+      }
+      @include mq(sp) {
+        margin-right: 2rem;
+      }
+    }
+  }
+}

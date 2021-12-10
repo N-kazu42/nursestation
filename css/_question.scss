@@ -74,7 +74,10 @@
     margin: 0 auto;
   }
   img {
-    width: 10%;
+    width: 32px;
+    @include mq(sp) {
+      width: 24px;
+    }
   }
   .left {
     position: absolute;
