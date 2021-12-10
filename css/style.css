@@ -2029,7 +2029,7 @@ h2, p {
   }
 }
 
-@media screen and (max-width: 374px) {
+@media screen and (max-width: 375px) {
   .about-wrap-textarea {
     width: 95%;
   }
@@ -2060,6 +2060,11 @@ h2, p {
 @media screen and (max-width: 320px) {
   .about-wrap-message {
     font-size: 18px;
+  }
+  .consul-person-name {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 10px;
   }
 }
 
