@@ -4,21 +4,22 @@
 @import "common";
 @import "question";
 
-h2,
-p {
+
+h2,p {
   font-family: kiwi Maru;
-  color: #868686;
+  color:#868686;
 }
 .pc-hidden {
   display: none;
 }
 
 #about {
-  background-image: url(../image/body_pattern.png);
+  background-image: url(../image/body_pattern.png); 
   background-size: 25px;
   position: relative;
-  padding-bottom: 8rem;
-  z-index: -200;
+  z-index: 2;
+  padding-bottom: 8rem; 
+ /* z-index: -200; */
 }
 .inner {
   max-width: 1100px;
@@ -34,42 +35,42 @@ p {
 .about-title-inner {
   display: inline-block;
   position: relative;
-
+  
   h2 {
-    margin: 0 auto;
-    font-size: 40px;
-    line-height: 58px;
-    text-align: center;
+      margin: 0 auto;
+      font-size: 40px;
+      line-height: 58px;
+      text-align: center;
   }
   img {
-    width: 32px;
-    @include mq(sp) {
-      width: 24px;
+      width: 32px;
+      @include mq(sp) {
+        width: 24px;
+      }
     }
-  }
   .left {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(-100%, -50%);
-    transform: translate(-100%, -50%);
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(-100%, -50%);
+      transform: translate(-100%, -50%);
   }
   .right {
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(100%, -50%);
-    transform: translate(100%, -50%);
-  }
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(100%, -50%);
+      transform: translate(100%, -50%);
+      }   
 }
 
 .about-desc {
   margin: 0 auto 50px auto;
 
   p {
-    text-align: center;
-    font-size: 18px;
-    line-height: 26px;
+      text-align: center;
+      font-size: 18px;
+      line-height: 26px;
   }
 }
 
@@ -84,8 +85,8 @@ p {
   margin-right: 50px;
 
   img {
-    width: 100%;
-    border-radius: 10px;
+  width: 100%;
+  border-radius: 10px;
   }
 }
 .about-wrap-textarea {
@@ -104,12 +105,13 @@ p {
   width: 130px;
   height: 650px;
   position: absolute;
+  z-index: -1;
   top: 0;
   right: 0;
-  z-index: -100;
+ /* z-index: -100; */
 
   img {
-    width: 100%;
+      width: 100%;
   }
 }
 
@@ -117,23 +119,26 @@ p {
   width: 150px;
   height: 310px;
   position: absolute;
+  z-index: -1;
   bottom: 0;
   left: 0;
-  z-index: -100;
+  /*z-index: -100; */
 
   img {
-    width: 100%;
+      width: 100%;
   }
 }
 
 #consul {
-  background-image: url(../image/body_pattern.png);
+  background-image: url(../image/body_pattern.png); 
   background-size: 25px;
-  z-index: -200;
-  position: relative;
-  padding-bottom: 8rem;
+  padding: 6rem 0;
+ /* z-index: -200; */
+  position: relative; 
+  z-index: 2;
 }
 .consul-title {
+
   padding: 5rem 0 3rem 0;
   display: flex;
   justify-content: center;
@@ -142,12 +147,12 @@ p {
 .consul-title-inner {
   display: inline-block;
   position: relative;
-
+  
   h2 {
-    margin: 0 auto;
-    font-size: 40px;
-    line-height: 58px;
-    text-align: center;
+      margin: 0 auto;
+      font-size: 40px;
+      line-height: 58px;
+      text-align: center;
   }
   img {
     width: 32px;
@@ -156,19 +161,19 @@ p {
     }
   }
   .left {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(-100%, -50%);
-    transform: translate(-100%, -50%);
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(-100%, -50%);
+      transform: translate(-100%, -50%);
   }
   .right {
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(100%, -50%);
-    transform: translate(100%, -50%);
-  }
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(100%, -50%);
+      transform: translate(100%, -50%);
+      }   
 }
 .consul-person {
   display: flex;
@@ -179,8 +184,8 @@ p {
   margin-right: 50px;
 
   img {
-    width: 100%;
-    border-radius: 10px;
+      width: 100%;
+      border-radius: 10px;
   }
 }
 .consul-person-textarea {
@@ -203,27 +208,29 @@ p {
 
 .bg_obj_body_3 {
   position: absolute;
+  z-index: -1;
   top: 10%;
   left: 0;
   width: 150px;
   height: 290px;
-  z-index: -100;
+  /*z-index: -100;*/
 
   img {
-    width: 100%;
+      width: 100%;
   }
 }
 
 .bg_obj_body_4 {
   position: absolute;
+  z-index: -1;
   top: 20%;
   right: 0;
   width: 160px;
   height: 760px;
-  z-index: -100;
+  /*z-index: -100; */
 
   img {
-    width: 100%;
+      width: 100%;
   }
 }
 
@@ -233,19 +240,20 @@ p {
   position: relative;
 
   li {
-    width: 27%;
-    position: relative;
+      width: 27%;
+      position: relative;
 
-    &:after {
-      position: absolute;
-      content: url(../image/arrrow.png);
-      transform: scale(0.5);
-      top: 5%;
-      right: -30%;
-    }
-    &:last-child:after {
-      display: none;
-    }
+      &:after {
+          position: absolute;
+          content: url(../image/arrrow.png);
+          transform: scale(0.5);
+          top: 5%;
+          right: -30%;
+      }
+      &:last-child:after {
+          display: none;
+      }
+
   }
 }
 
@@ -254,20 +262,21 @@ p {
   position: relative;
 
   p {
-    font-size: 24px;
-    line-height: 35px;
-    text-align: left;
-    margin-left: 85px;
+      font-size: 24px;
+      line-height: 35px;
+      text-align: left;
+      margin-left: 85px;
   }
 
   &::before {
-    position: absolute;
-    content: url(../image/number_01.png);
-    /* top: -45pxから−40pxに変更 */
-    top: -40px;
-    left: -40px;
-    transform: scale(0.5);
+      position: absolute;
+      content: url(../image/number_01.png);
+  /* top: -45pxから−40pxに変更 */
+      top: -40px;
+      left: -40px;
+      transform: scale(0.5);
   }
+
 }
 
 .consul-flow-title02 {
@@ -276,20 +285,20 @@ p {
   position: relative;
 
   p {
-    font-size: 24px;
-    line-height: 35px;
-    text-align: left;
-    margin-left: 85px;
-    padding-top: 15px;
-    /* padding-top: 15px追加 */
+      font-size: 24px;
+      line-height: 35px;
+      text-align: left;
+      margin-left: 85px;
+      padding-top: 15px;
+  /* padding-top: 15px追加 */
   }
   &::before {
-    position: absolute;
-    content: url(../image/number_02.png);
-    /* top: -45pxから−40pxに変更 */
-    top: -40px;
-    left: -40px;
-    transform: scale(0.5);
+      position: absolute;
+      content: url(../image/number_02.png);
+  /* top: -45pxから−40pxに変更 */    
+      top: -40px;
+      left: -40px;
+      transform: scale(0.5);
   }
 }
 
@@ -298,21 +307,22 @@ p {
   position: relative;
 
   p {
-    position: relative;
-    font-size: 24px;
-    line-height: 35px;
-    text-align: left;
-    margin-left: 85px;
+      position: relative;
+      font-size: 24px;
+      line-height: 35px;
+      text-align: left;
+      margin-left: 85px;
   }
   &::before {
-    position: absolute;
-    content: url(../image/number_03.png);
-    /* top: -45pxから−40pxに変更 */
-    top: -40px;
-    left: -40px;
-    transform: scale(0.5);
+      position: absolute;
+      content: url(../image/number_03.png);
+  /* top: -45pxから−40pxに変更 */
+      top: -40px;
+      left: -40px;
+      transform: scale(0.5);
   }
-}
+
+} 
 
 .consul-flow-desc {
   font-size: 18px;
@@ -325,190 +335,262 @@ p {
 
 @media screen and (max-width: 1080px) {
   #about {
-    padding-bottom: 4rem;
+      padding-bottom: 4rem;
   }
+  .about-desc {
+      margin: 0 auto;
+  
+      p {
+          text-align: center;
+          font-size: 18px;
+          line-height: 26px;
+      }
+  }
+/*  .about-wrap {
+      flex-direction: column;
+  } */
+  /*新たに追加*/
   .about-wrap {
-    flex-direction: column;
+      justify-content: space-between;
   }
   .about-wrap-image {
-    width: 60%;
-    margin: 0 auto;
+     /* width: 60%;*/
+     width: 45%;
+     height: 100%;
+      /*margin: 0 auto;*/
+      margin: 50px auto 0 auto;
+  }
+  .about-wrap-image img {
+       /*新たに追加*/
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
   }
   .about-wrap-textarea {
-    width: 90%;
-    margin: 50px auto 0 auto;
-    text-align: left;
+     /* width: 90%; */
+      width: 45%;
+      margin: 50px auto 0 auto;
+      text-align: left;
   }
   .about-wrap-message {
-    display: block;
-    text-align: left;
+      display: block;
+      text-align: left;
+       /* 新たに追加 */
+       font-size: 26px;
+       line-height: 30px;
+
   }
   .about-wrap-detail {
-    margin-top: 25px;
+      margin-top: 25px;
   }
   .consul-flow {
-    flex-direction: column;
-    margin: 0 auto;
-    width: 90%;
-  }
+      flex-direction: column;
+      margin: 0 auto;
+      width: 90%;
+  } 
   .consul-flow li {
-    width: 100%;
-
-    &::after {
-      display: none;
-    }
+      width: 100%;
+      
+      &::after {
+          display: none;
+      }
   }
   .consul-flow-arrow {
-    display: block;
-    width: 4%;
-    height: auto;
-    margin: 20px auto;
+      display: block;
+      width: 4%;
+      height: auto;
+      margin: 20px auto;
+  
+      img {
+          width: 100%;
+      }
+  
+  }    
 
-    img {
-      width: 100%;
-    }
-  }
 }
 
 @media screen and (max-width: 768px) {
   .sp-hidden {
-    display: none;
+      display: none;
   }
   .pc-hidden {
-    display: inline;
+      display: inline;
   }
-
+  
   .about-title-inner .left {
-    left: 15%;
+      left: 15%;
   }
   .about-title-inner .right {
-    right: 15%;
+      right: 15%;
   }
-  .about-wrap-image {
-    width: 90%;
-    margin: 0 auto;
+ /* .about-wrap-image {
+      width: 90%;
+      margin: 0 auto;
   }
   .about-wrap-textarea {
-    width: 90%;
-    margin: 25px auto 0 auto;
-  }
+      width: 90%;
+      margin: 25px auto 0 auto;
+  } */
   .about-wrap-message {
-    font-size: 26px;
-    line-height: 30px;
-    margin-bottom: 15px;
+     /* font-size: 26px;
+      line-height: 30px; */
+      margin-bottom: 15px;
+      font-size: 20px;
+      line-height: 25px;
   }
-  .bg_obj_body_1,
-  .bg_obj_body_2 {
-    display: none;
+  .bg_obj_body_1,.bg_obj_body_2 {
+      display: none;
   }
-
+  
   .consul-title-inner .left {
-    left: 5%;
+      left: 5%;
   }
   .consul-title-inner .right {
-    right: 5%;
+      right: 5%;
   }
-  .consul-person {
-    flex-direction: column;
-  }
+  /* .consul-person {
+      flex-direction: column;
+  } */
   .consul-person-img {
-    width: 90%;
-    margin: 0 auto;
+      /* width: 90%; */
+      width: 45%;
+      margin: 0 auto;
   }
   .consul-person-textarea {
-    width: 90%;
-    margin: 15px auto 0 auto;
+      /* width: 90%; */
+      width: 45%;
+      margin: 15px auto 0 auto;
   }
   .consul-person-name {
-    font-size: 24px;
-    line-height: 35px;
-    margin-bottom: 15px;
+      font-size: 24px;
+      line-height: 35px;
+      margin-bottom: 15px;
   }
   .consul-person-job {
-    font-size: 18px;
-    line-height: 26px;
-    margin-bottom: 15px;
+      font-size: 18px;
+      line-height: 26px;
+      margin-bottom: 15px;
   }
 
   .bg_obj_body_3 {
-    top: 30%;
-    width: 85px;
-    height: 225px;
+      top: 30%;
+      width: 85px;
+      height: 225px;   
   }
   .bg_obj_body_4 {
-    top: 65%;
-    width: 75px;
-    height: 455px;
+      top: 65%;
+      width: 75px;
+      height: 455px;
   }
+
 }
 @media screen and (max-width: 550px) {
+
   .about-title-inner h2 {
-    font-size: 32px;
-    line-height: 46px;
+      font-size: 32px;
+      line-height: 46px;
   }
 
   .about-wrap-message {
-    font-size: 25px;
-    line-height: 35px;
+      font-size: 25px;
+      line-height: 35px;
   }
   .consul-title-inner h2 {
-    font-size: 32px;
-    line-height: 46px;
+      font-size: 32px;
+      line-height: 46px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .about-title-inner h2 {
-    font-size: 24px;
-    line-height: 35px;
-    text-align: center;
+      font-size: 24px;
+      line-height: 35px;
+      text-align: center;
   }
+  /*新しく追加*/
+  .about-wrap {
+      flex-direction: column;
+      margin: 0 auto;
+      width: 90%;
+  }
+  /*新しく追加*/
+  .about-wrap-image {
+      width: 100%;
+  }
+  /*新しく追加*/
+  .about-wrap-textarea {
+      width: 100%;
+      margin: 20px auto 0 auto;
+  } 
   .about-wrap-message {
-    font-size: 20px;
-    line-height: 29px;
+      font-size: 20px;
+      line-height: 29px;
   }
   .consul-title-inner h2 {
-    font-size: 24px;
-    line-height: 35px;
-    text-align: center;
+      font-size: 24px;
+      line-height: 35px;
+      text-align: center;
+  }
+   /* 新しく追加*/
+  .consul-person {
+      flex-direction: column;
+      margin: 0 auto;
+      width: 90%;
+  } 
+   /* 新しく追加*/
+  .consul-person-img {
+      width: 100%;
+      margin: 0 auto;
+  }
+   /* 新しく追加*/
+  .consul-person-textarea {
+      width: 100%;
+      margin: 15px auto 0 auto;
   }
   .consul-flow-arrow {
-    width: 7%;
-  }
+      width: 7%;
+  } 
   .consul-title-inner .left {
-    left: 5%;
+      left: 5%;
   }
   .consul-title-inner .right {
-    right: 5%;
+      right: 5%;
   }
 }
 
 @media screen and (max-width: 374px) {
   .about-wrap-textarea {
-    width: 95%;
+      width: 95%;
   }
   .about-wrap-message {
-    margin: 0;
+      margin: 0;
   }
   .consul-person-name {
-    font-size: 20px;
-    line-height: 25px;
-    margin-bottom: 10px;
+      font-size: 20px;
+      line-height: 25px;
+      margin-bottom: 10px;
   }
 
   .consul-flow-title01 {
-    margin-bottom: 30px;
-    p {
-      font-size: 20px;
-      line-height: 25px;
-    }
+      margin-bottom: 30px;
+      p {
+          font-size: 20px;
+          line-height: 25px;
+      }
   }
 
   .consul-flow-title03 {
-    margin-bottom: 30px;
-    p {
-      font-size: 20px;
-      line-height: 25px;
-    }
+      margin-bottom: 30px;
+      p {
+          font-size: 20px;
+          line-height: 25px;
+      }
+  }
+
+}
+@media screen and (max-width: 320px) {
+  
+  .about-wrap-message {
+      font-size: 18px;
   }
 }

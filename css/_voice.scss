@@ -50,8 +50,9 @@
   }
   .voice-title {
     font-size: 40px;
-    @include mq(tab) {
-      font-size: 30px;
+    line-height: 35px;
+    @include mq(sp) {
+      font-size: 24px;
     }
 
     padding: 5rem 0 3rem 0;
