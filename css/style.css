@@ -557,7 +557,7 @@ img {
 .anchor-link {
   position: absolute;
   top: auto;
-  right: 9%;
+  right: 6%;
   bottom: 13%;
   left: auto;
   text-decoration: underline;
@@ -2458,6 +2458,16 @@ img {
 
 #contact .text-area {
   padding: 3rem 0 0 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   font-size: 40px;
 }
 
@@ -2587,22 +2597,16 @@ img {
   }
 }
 
-@media screen and (max-width: 480px) {
-  #contact .text-area button {
-    margin-right: 2rem;
-  }
-}
-
 #contact .text-area-line-wrap {
   display: -webkit-box;
   display: flex;
   display: -ms-flexbox;
-  justify-content: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  justify-content: flex-end;
+  -webkit-box-pack: flex-end;
+  -ms-flex-pack: flex-end;
+  align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;

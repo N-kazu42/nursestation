@@ -28,6 +28,9 @@
   }
   .text-area {
     padding: 3rem 0 0 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
     @media screen and (max-width: 375px) {
       padding: 3rem 0 0 1rem;
     }
@@ -108,12 +111,10 @@
       @media screen and (max-width: 900px) {
         width: 260px;
       }
-      @include mq(sp) {
-        margin-right: 2rem;
-      }
+      
     }
     &-line-wrap{
-      @include flex(center, center);
+      @include flex(flex-end, flex-end);
       flex-direction: column;
       .link-text{
         text-decoration: underline;
