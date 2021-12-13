@@ -1,11 +1,12 @@
 @import "_common.scss";
 
+
 .header {
   @include position;
   position: fixed;
   z-index: 100;
   width: 100%;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.8);
 
   .inner {
     height: 80px;
@@ -61,6 +62,12 @@
   width: 404px;
 }
 
+.anchor-link {
+  @include position(auto, 9%, 13%, auto);
+  text-decoration: underline;
+  font-size: 25px;
+}
+
 @media screen and (max-width: 1250px) {
   .mainvisual {
     height: 750px;
@@ -88,6 +95,10 @@
 
   .line_button {
     width: 350px;
+  }
+
+  .anchor-link {
+    right: 6%;
   }
 }
 
@@ -120,6 +131,10 @@
   .line_button {
     width: 310px;
   }
+
+  .anchor-link {
+    font-size: 22px;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -151,6 +166,11 @@
   .line_button {
     bottom: 23%;
     width: 260px;
+  }
+
+  .anchor-link {
+    @include position(auto, 4%, 19%, auto);
+    font-size: 20px;
   }
 }
 
@@ -205,5 +225,10 @@
   .line_button {
     bottom: 0;
     width: 176px;
+  }
+
+  .anchor-link {
+    @include position(auto, 3%, -3%, auto);
+    font-size: 16px;
   }
 }
