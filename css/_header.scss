@@ -1,5 +1,4 @@
-@import "_common.scss";
-
+@import 'common';
 
 .header {
   @include position;
@@ -58,12 +57,15 @@
 }
 
 .line_button {
-  @include position(auto, 2%, 17%, auto);
+  @include position(auto, 2%, 12%, auto);
   width: 404px;
+  text-align: right;
 }
 
 .anchor-link {
-  @include position(auto, 6%, 13%, auto);
+  display: inline-block;
+  padding-right: 5px;
+  margin-top: 5px;
   text-decoration: underline;
   font-size: 25px;
 }
@@ -95,10 +97,6 @@
 
   .line_button {
     width: 350px;
-  }
-
-  .anchor-link {
-    right: 6%;
   }
 }
 
@@ -169,7 +167,6 @@
   }
 
   .anchor-link {
-    @include position(auto, 4%, 19%, auto);
     font-size: 20px;
   }
 }
@@ -228,7 +225,7 @@
   }
 
   .anchor-link {
-    @include position(auto, 3%, -3%, auto);
+    margin-top: 4px;
     font-size: 16px;
   }
 }

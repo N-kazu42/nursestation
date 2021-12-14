@@ -549,17 +549,16 @@ img {
   position: absolute;
   top: auto;
   right: 2%;
-  bottom: 17%;
+  bottom: 12%;
   left: auto;
   width: 404px;
+  text-align: right;
 }
 
 .anchor-link {
-  position: absolute;
-  top: auto;
-  right: 6%;
-  bottom: 13%;
-  left: auto;
+  display: inline-block;
+  padding-right: 5px;
+  margin-top: 5px;
   text-decoration: underline;
   font-size: 25px;
 }
@@ -585,9 +584,6 @@ img {
   }
   .line_button {
     width: 350px;
-  }
-  .anchor-link {
-    right: 6%;
   }
 }
 
@@ -644,11 +640,6 @@ img {
     width: 260px;
   }
   .anchor-link {
-    position: absolute;
-    top: auto;
-    right: 4%;
-    bottom: 19%;
-    left: auto;
     font-size: 20px;
   }
 }
@@ -709,11 +700,7 @@ img {
     width: 176px;
   }
   .anchor-link {
-    position: absolute;
-    top: auto;
-    right: 3%;
-    bottom: -3%;
-    left: auto;
+    margin-top: 4px;
     font-size: 16px;
   }
 }
